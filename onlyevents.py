@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 import time
 # Costanti
 
-LINKMFP = "https://trimming-mfp.hf.space"
+LINKMFP = "https://trimming-passaggio.hf.space"
 PASSWORD = "ApiPassword"
 
 PROXY = f"{LINKMFP}/proxy/hls/manifest.m3u8?api_password={PASSWORD}&d="
