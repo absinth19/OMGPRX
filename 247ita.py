@@ -9,9 +9,10 @@ import time
 
 LINKMFP = "https://trimming-passaggio.hf.space"
 PASSWORD = "Leggila"
-
+REFERER = "forcedtoplay.xyz"
+ORIGIN = "forcedtoplay.xyz"
 PROXY = f"{LINKMFP}/proxy/hls/manifest.m3u8?api_password={PASSWORD}&d="
-HEADER = "&h_user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F133.0.0.0+Safari%2F537.36&h_referer=https%3A%2F%2Fxextreamplay.xyz%2F&h_origin=https%3A%2F%2Fxextreamplay.xyz"
+HEADER = f"&h_user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F133.0.0.0+Safari%2F537.36&h_referer=https%3A%2F%2F{REFERER}%2F&h_origin=https%3A%2F%2F{ORIGIN}"
 M3U8_OUTPUT_FILE = "247ita.m3u8"
 # File e URL statici
 daddyLiveChannelsFileName = '247channels.html'
@@ -398,3 +399,4 @@ total_247_channels = generate_m3u8_247(matches_247)
 dazn_added = add_dazn1_channel()
 
 print(f"Script completato. Canali 24/7 aggiunti: {total_247_channels}, DAZN 1 aggiunto: {dazn_added}")
+
